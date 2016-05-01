@@ -1,0 +1,18 @@
+<div>
+    <% @tweet.each do |tweet| %>
+    <div class="tweets">
+        <span class="gravatar"><%= image_tag(tweet.user.profile_image_url) %></span>
+        <span class="name"><%= tweet.user.screen_name %></span>
+        <span><%= link_to "@#{tweet.user.screen_name}" %></span>
+        <% if tweet.text.include?("@") %>
+          <p class="content"><%= auto_link(tweet.text.gsub("#{tweet.user_mentions.first.screen_name}", link_to("#{tweet.user_mentions.first.screen_name}",tweet_path(:id => tweet.user_mentions.first.screen_name))).html_safe) %></p>
+        <% else %>
+          <p class="content"><%= auto_link(tweet.text) %>
+        <% end %>
+    </div>
+    <% end %>
+</div>
+
+
+
+

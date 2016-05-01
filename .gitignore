@@ -17,3 +17,6 @@
 /tmp
 
 /.bundle
+/path/*
+.env
+.byebug_history
