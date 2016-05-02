@@ -13,6 +13,7 @@ gem 'bootstrap-sass'
 gem 'twitter', '~> 5.16'
 gem 'dotenv-rails'
 gem 'rails_autolink'
+gem 'bootstrap-tooltip-rails'
 
 group :development, :test do
   gem 'spring'
@@ -30,6 +31,7 @@ group :test do
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'rspec-rails', '~> 3.0'
+  gem 'capybara'
   gem 'simplecov', :require => false
   gem 'coveralls', :require => false
 end
