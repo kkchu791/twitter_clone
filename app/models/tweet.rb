@@ -1,6 +1,6 @@
 class Tweet < ActiveRecord::Base
-  def self.our_public_tweets(username="kkchu791")
-    client.user_timeline(username, count: 3)
+  def self.our_public_tweets(username="casetabs")
+    client.user_timeline(username, count: 20)
   end
 
   def self.client

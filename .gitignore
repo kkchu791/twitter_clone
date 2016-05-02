@@ -20,3 +20,5 @@
 /path/*
 .env
 .byebug_history
+public/coverage
+spec/simplecov

@@ -1,1 +1,0 @@
-#### A twitter clone application.
